@@ -64,7 +64,7 @@ class _EditItemPageState extends State<EditItemPage> {
                   decoration: InputDecoration(labelText: "Name"),
                   validator: (value) {
                     if (!Validation.isValidName(value ?? '')) {
-                      return 'Please enter a unique name';
+                      return 'Please enter a valid name';
                     }
                     return null;
                   },

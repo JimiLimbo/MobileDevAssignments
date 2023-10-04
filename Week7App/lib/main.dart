@@ -34,7 +34,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  void _sortItems() { // Sort items by Id in ascending order 
+  void _sortItems() {// Sort items by Id in ascending order 
     GlobalItems().items.sort((a, b) => a.Id.compareTo(b.Id));  
   }
    
@@ -194,14 +194,14 @@ Future<void> _showDeleteConfirmationDialog(Item item) async {
             TextButton(
               child: Text('Cancel'),
               onPressed: () {
-                Navigator.of(context).pop();  // Close the dialog
+                Navigator.of(context).pop();  
               },
             ),
             TextButton(
               child: Text('Proceed'),
               onPressed: () {
-                _handleDeleteItem(item);  // Delete the item
-                Navigator.of(context).pop();  // Close the dialog
+                _handleDeleteItem(item); 
+                Navigator.of(context).pop();  
               },
             ),
           ],

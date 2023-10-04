@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../Models/globalItems.dart';
 import '../Models/item.dart';
-import '../Models/validation.dart';  // Import the validation class
+import '../Models/validation.dart';  
 
 class EditItemPage extends StatefulWidget {
   final Item item;
